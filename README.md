@@ -2,7 +2,7 @@
 A collection of scripts for management Postgres databases
 
 ## Scripts
-*  [check_postgres_dbs_size_growth_rate.sh](check_postgres_dbs_size_growth_rate.sh): Check Postgres DB(s) size growth rate
+*  [shell/check_postgres_dbs_size_growth_rate.sh](check_postgres_dbs_size_growth_rate.sh): Check Postgres DB(s) size growth rate
 *  [compare_2_dbs_postgres.sh](compare_2_dbs_postgres.sh): Compare Tables and Indexes of 2 DBs in Postgres DB Instance
 *  [check_postgres_db_objects_size_growth_rate.sh](check_postgres_db_objects_size_growth_rate.sh): Check Postgres DB objects size growth rate
 
