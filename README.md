@@ -22,6 +22,7 @@ check_dead_tuples_and_statistics.sql
 list_dbs_and_their_size.sql
 find_tables_without_primary_keys.sql
 check_temp_file_size.sql
+check_tables_and_indexes_sizes
 ```
  
  
