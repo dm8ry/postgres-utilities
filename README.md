@@ -24,6 +24,7 @@ find_tables_without_primary_keys.sql
 check_temp_file_size.sql
 check_tables_and_indexes_sizes.sql
 check_bloat_in_db.sql
+pg_stat_activity_queries.sql
 ```
  
  
