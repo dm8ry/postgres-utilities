@@ -19,6 +19,7 @@ check_postgres_db_objects_size_growth_rate.sh -h localhost -p 5432 -d some_db [-
 ## SQL
 ```
 check_dead_tuples_and_statistics.sql
+list_dbs_and_their_size.sql
 ```
  
  
