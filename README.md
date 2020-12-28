@@ -1,1 +1,3 @@
-check_postgres_dbs_size_growth_rate.sh
+# Postgres DB related scripts
+A collection of scripts for management Postgres databases
+
