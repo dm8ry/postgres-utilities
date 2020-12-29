@@ -1,0 +1,30 @@
+Get dump from Postgres DB:
+
+pg_dump -h localhost -p 5432 my_database > my_database.sql
+
+To dump a database into a directory-format archive in parallel with 4 worker jobs:
+
+mkdir my_db_dumps
+
+pg_dump -h localhost -p 5432 -Fd my_database -j 4 -f my_db_dumps
+
+To dump a database schema only:
+
+pg_dump -h localhost -p 5432 -s my_database > my_database_schema_only.sql
+
+To restore a database from dump:
+
+psql -h localhost -p 5432 -U my_user my_new_database < some_db_dump.sql   
+
+Parallel backup:
+
+pg_dump -F d -f my_db_backups -j 4 -h localhost -p 5432 -U my_user -d my_database
+
+Parallel restore:
+
+create database dima_test;
+
+pg_restore -F d -j 4 -h localhost -p 5432 -U my_user -d my_database my_db_backups
+
+vacuumdb -h localhost -p 5432 -U postgres -j 4 -z -v my_database
+
